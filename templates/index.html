@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Wash Workflow App</title>
+    <title>Auto Wash Workflow</title>
 
+    <!-- Favicon links -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon_io/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='favicon_io/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ url_for('static', filename='favicon_io/android-chrome-512x512.png') }}">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='favicon_io/mstile-150x150.png') }}">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body>
-    <h1>Auto Wash Workflow App</h1>
-    <h3>Huidige taak:</h3>
+    <h1>Auto Wash Workflow</h1>
+    <h3>Huidige taak</h3>
     <p>{{ task }}</p>
     <form action="{{ url_for('complete_task') }}" method="POST">
         <button type="submit">Mark as Completed</button>

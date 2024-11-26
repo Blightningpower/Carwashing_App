@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +13,10 @@ body {
 
 /* Kopstijl */
 h1 {
-    color: #333;
+    color: cadetblue;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 10vh;
 }
 
 /* Paragraafstijl */
@@ -62,7 +63,7 @@ select {
 /* Responsieve opmaak */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     p {

@@ -7,6 +7,7 @@ app = Flask(__name__)
 tasks = [
     "Wasbox bij halve tank",
     "CarPro bij lege tank",
+    "Wasbox bij halve tank",
     "Washin7 bij lege tank"
 ]
 current_task_index = 0
